@@ -3431,6 +3431,28 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/xXx_E_V_A_L_xXx/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+if text == "استوري قرأن" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(1,62); 
+local Text ='ارح سمعك❤️' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = 'ＧＬＩＴＳＨ',url="t.me/Xccpp"}},
+{{text = '𖣘 SＯＵＲСＥ EＶＡＬ 𖣘',url="t.me/SourceEval"}},
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Xx_E_V_A_L_xX/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "ميمز" or text ==  'ميم'  and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(1,230); 
+local Text = 'تم اختيار هذا الميم اليك'  
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '  ＧＬＩＴＳＨ ',url="t.me/Xccpp"}},
+{{text = ' SＯＵＲСＥ EＶＡＬ',url="t.me/SourceEval"}},
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='  .. msg.chat_id_ ..  '&photo=https://t.me/ENEMEO/'..ght..'&caption='  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == "اسكرينات" or text == 'اسكرين' and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,62); 
 local Text ='تم اختيار هذا الاسكرين لك' 
@@ -5919,7 +5941,7 @@ if text == "تاك للكل"  and CoSu(msg) then
 if not database:get(bot_id..'Cick:all'..msg.chat_id_) then
 if database:get(bot_id.."S00F4:all:Time"..msg.chat_id_..':'..msg.sender_user_id_) then  
 return 
-send(msg.chat_id_, msg.id_,"انتظر دقيقه من فضلك")
+send(msg.chat_id_, msg.id_,"استني يرحمك دقيقه")
 end
 database:setex(bot_id..'S00F4:all:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub('-100','')},function(argg,dataa) 
@@ -5931,7 +5953,8 @@ for k, v in pairs(list) do
 tdcli_function({ID="GetUser",user_id_ = v.user_id_},function(arg,data)
 if x == 5 or x == tags or k == 0 then
 tags = x + 5
-t = "#all"
+t = "◍وينكم ي هكرات 
+──┈┈┈┄┄╌╌╌╌┄┄┈┈┈"
 end
 x = x + 1
 tagname = data.first_name_
@@ -13143,7 +13166,7 @@ PRo = '❴ ✔️ ❵'
 else
 PRo = '❴ ✖ ❵'
 end 
-send(msg.chat_id_, msg.id_,'\n 🔺︙ صلاحيات البوت هي\n⩹━━━⊶SＯＵＲСＥ EＶＡＬ⊷━━━⩺\n 🔺︙   علامة ال {✔️} تعني مفعل\n 🔺︙   علامة ال {✖} تعني غير مفعل\n⩹━━━⊶SＯＵＲСＥ EＶＡＬ⊷━━━⩺\n 🔺︙ تغير معلومات المجموعة ↞ '..INf..'\n 🔺︙ مسح الرسائل ↞ '..DEL..'\n 🔺︙ حظر المستخدمين ↞ '..REs..'\n 🔺︙ دعوة المستخدمين ↞ '..INv..'\n 🔺︙ ثتبيت الرسالة ↞ '..Pin..'\n 🔺︙ اضافة مشرفين ↞ '..PRo)   
+send(msg.chat_id_, msg.id_,'\n 🔺︙ صلاحيات البوت هي\n⩹━━━⊶SＯＵＲСＥ EＶＡＬ⊷━━━⩺\n 🔺︙   علامة ال {✔️} تعني مفعل\n 🔺︙   علامة ال {✖} تعني غير مفعل\n⩹━━━⊶SＯＵＲСＥ EＶＡＬ⊷━━━⩺\n 🔺︙ تغير معلومات المجموعة ↞ '..INf..'\n 🔺︙ مسح الرسائل ↞ '..DEL..'\n 🔺︙ حظر المستخدمين ↞ '..REs..'\n ??︙ دعوة المستخدمين ↞ '..INv..'\n 🔺︙ ثتبيت الرسالة ↞ '..Pin..'\n 🔺︙ اضافة مشرفين ↞ '..PRo)   
 end
 end
 if text == "تعطيل الانستا" and Manager(msg) then
